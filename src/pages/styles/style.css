@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 .first-top-itens{
-    background-color: greenyellow;
     display: flex;
     justify-content: space-around;
     height: 100px;
@@ -13,8 +13,19 @@
     align-items: center;
 }
 .first-top-itens .tittle-page{
-    font-size: 30px;
-    margin-right: 530px;
+    font-size: 40px;
+    margin-right: 100px;
+}
+.reta-1{
+    width: 250px;
+    height: 2px;
+    background-color: black;
+}
+.reta-2{
+    width: 200px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: black;
 }
 .top-right{
     display: flex;
@@ -32,9 +43,10 @@
     margin-right: 25px;
 }
 .top-right .top-right-photo{
-    background-color: red;
     width: 80px;
     height: 80px;
+}
+.top-right .top-right-photo img{
     border-radius: 100%;
 }
 
@@ -86,19 +98,25 @@ h1{
 
 }
 .item-left{
-    background-color: blue;
+    background-color:#ffffff;
+    color: black;
+    font-weight: 600;
     margin-right: 15px;
     display: flex;
     width: 180px;
+    padding: 21px ;
     align-items: center;
     border-radius: 15px;
     justify-content: center;
 }
 
 .item-right{
-    background-color: red;
+    background-color:#060b4f;
+    color: white;
+    font-weight: 600;
     display: flex;
     border-radius: 15px;
+    padding: 21px ;
     width: 180px;
     justify-content: center;
     align-items: center;
@@ -111,6 +129,7 @@ h1{
     margin-top: 15px;
     width: 250px;
     height: 40px;
+    margin-bottom: -10px;
     background-color: white;
 }
 .selec-box-itens{
@@ -180,6 +199,8 @@ h1{
 }
 .usuario-title{
     display: flex;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     justify-content: center;
     background-color: #B4B4B4;
 }
@@ -191,12 +212,13 @@ a{
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+    font-weight: 600;
 }
 
 
 .usuario{
     border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    
 }
 .usuario img{
     width: 45px;
@@ -208,12 +230,18 @@ a{
     font-size: 12px;
     margin-top: 10px;
 }
+
 .status, .esperado, .registrado, .salario, .matricula{
     width: 150px;
     border-right: 1px solid black;
-    border-bottom: 1px solid black;
+}
+.matricula{
+    border-right: none;
 }
 
-
+p{
+    color:black;
+    font-weight: 600;
+}
 
 

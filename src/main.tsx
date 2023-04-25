@@ -7,6 +7,7 @@ import Contact from "./pages/Contact"
 import { PanelControl } from './pages/PanelControl';
 
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <PanelControl/>
