@@ -12,12 +12,18 @@ export function PanelControl(){
     return(
         <div>
             <div className="first-top-itens">
-                <div className="tittle-page">Delli Contabilidade</div>
+                <div className="tittle-page">Delli Contabilidade
+                <div className="reta-1"></div>
+                <div className="reta-2"></div>
+                </div>
                 <div className="top-right">
-                    <div className="painel-control">Painel de Controle</div>
-                    <div className="top-right-photo"></div>
+                    <div style={{cursor:"pointer" }} className="painel-control">Painel de Controle</div>
+                    <div className="top-right-photo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI59AoLNRCejUcON0m_Ur-HMvNBQn_9rdG6A&usqp=CAU" alt="#" />
+                    </div>
                 </div>
             </div>
+            
             <div className="container">
                 <div className="header">
                     <div className="header-left">
@@ -43,10 +49,15 @@ export function PanelControl(){
                     </div>
                     <div className="header-right">
                         <div className="header-itens-right">
-                            <div className="item-left">Novo Usuário</div>
-                            <div className="item-right">Relatório Geral</div>
+                            <div className="item-left">
+                                <img style={{width:"25px", height:"auto", cursor:"pointer"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pGtXk4EfjPxV-3vNPgqRBHvZd3kQUTEoEg&usqp=CAU" alt="" />
+                                Novo Usuário
+                                </div>
+                            <div  style={{cursor:"pointer" }}className="item-right">Relatório Geral
+                            <img style={{width:"21px", height:"auto", marginLeft:"1px"}} src="#" alt="#" />
+                            </div>
                         </div>
-                        <div style={{cursor:"pointer"}} onClick={clickEvent} className="select-box">
+                        <div style={{cursor:"pointer", marginLeft:"15px"}} onClick={clickEvent} className="select-box">
                             Caixa de Seleção 
                             <img onClick={clickEvent} style={{width:"25px",marginLeft:"40px", cursor:"pointer"}} src="https://cdn-icons-png.flaticon.com/512/6423/6423873.png" alt="#" />
                         </div>
