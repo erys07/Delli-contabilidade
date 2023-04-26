@@ -1,6 +1,15 @@
-    import Image from '../assets/images/image.svg'
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Image from '../assets/images/image.svg'
 
     function Main(){
+        const navite = useNavigate();
+        const nextPage = ()=>{
+            navite("/PanelControl")
+        }
+
+
+
         return<div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="flex flex-col items-center justify-center h-screen bg-[#110782]" style={{ backgroundImage: "radial-gradient(circle at center, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%)", padding: "20px" }}>
                 <div className="flex items-center justify-center mb-10">
@@ -29,7 +38,7 @@
                         <a>Senha</a>
                     </div>
                     <div className='flex flex-row mb-7'>
-                        <button className='w-32 h-10 bg-[#1CCB00] rounded-md text-white text-xl mr-10'>Entrar</button>
+                        <button className='w-32 h-10 bg-[#1CCB00] rounded-md text-white text-xl mr-10' onClick={nextPage}>Entrar</button>
                         <button className='text-[#636CE1] text-xs'>Precisa de ajuda? Clique Aqui</button>
                     </div>
                 </div>

@@ -8,6 +8,10 @@ import { PanelControl } from './pages/PanelControl';
 
 const router = createBrowserRouter([
   {
+    path:"",
+    element:<Main/>
+  },
+  {
     path: "/PanelControl",
     element: <PanelControl/>
   },
