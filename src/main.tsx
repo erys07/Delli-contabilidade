@@ -6,7 +6,7 @@ import Main from "./pages/Main";
 import Contact from "./pages/Contact"
 import { PanelControl } from './pages/PanelControl';
 
-const router = createBrowserRouter([ 
+const router = createBrowserRouter([
   {
     path: "/PanelControl",
     element: <PanelControl/>
