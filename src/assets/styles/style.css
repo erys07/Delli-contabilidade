@@ -57,6 +57,7 @@
     width: auto;
     margin:30px;
     border-radius: 5px;
+    padding-bottom: 7px;
 }
 
 .header{
@@ -175,7 +176,7 @@ h1{
     align-items: center;
     display: flex;
     flex: row;
-    width: 550px;
+    width: 452px;
     
 }
 .usuario-title{
@@ -209,7 +210,7 @@ a{
     margin-top: 10px;
 }
 .status, .esperado, .registrado, .salario, .matricula{
-    width: 150px;
+    width: 140px;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }

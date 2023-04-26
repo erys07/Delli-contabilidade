@@ -1,15 +1,16 @@
-import "./styles/style.css"
+import "../assets/styles/style.css"
 import { useState } from "react"
+import  Client from "../assets/components/Client"
+
 export function PanelControl(){
+
     const [list, setList] = useState(false)
     function clickEvent(){
         setList(!list)
         
     }
-
-
     return(
-        <div className="all-itens">
+        <div>
             <div className="first-top-itens">
                 <div className="tittle-page">Delli Contabilidade</div>
                 <div className="top-right">
@@ -17,14 +18,13 @@ export function PanelControl(){
                     <div className="top-right-photo"></div>
                 </div>
             </div>
-
             <div className="container">
                 <div className="header">
                     <div className="header-left">
                         <h1>Relátorio de Funcionário</h1>
                         <div className="filter-circle">
                             <div>
-                                <div className="circles-full"></div>
+                                <div className="w-10 h-10 bg-white rounded-full"></div>
                                 <div className="filter-names">Presentes</div>
                             </div>
                             <div>
@@ -50,9 +50,6 @@ export function PanelControl(){
                             Caixa de Seleção 
                             <img onClick={clickEvent} style={{width:"25px",marginLeft:"40px", cursor:"pointer"}} src="https://cdn-icons-png.flaticon.com/512/6423/6423873.png" alt="#" />
                         </div>
-
-
-
                         <div style={{display:list? "flex":"none"}} className="selec-box-itens">
                             <ul>
                                 <li>Primeira Opção</li>
@@ -65,80 +62,11 @@ export function PanelControl(){
                         </div>
                     </div>
                 </div> 
-
-
-
-
-                <div className="window-info" >
-                    <div className="usuario">
-                        <div className="usuario-title">Usuário</div>
-                        <div>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoktTc3yCNfoP9xUxNbytvxSM9tkCsd9WDQ&usqp=CAU" alt="#" />
-                            <div className="usuario-txt">Mario Miru Oushi <br />
-                            Delli Contabilidade & Cia - Assisnte de Marketing <br />
-                            Colaborador</div>
-                            <a href="#">Link</a>
-                        </div>
-                    </div>
-
-                    <div className="status">
-                        <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            Alto Atraso <br />
-                            Presente
-                        </div>
-                    </div>
-
-
-                    <div className="esperado">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                        <p>7:30-12:00</p>
-                        <p>13:00 - 18:00</p>
-                        </div>
-                    </div>
-
-
-                    <div className="registrado">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            <p>8:34 - 11:40</p>
-                            <p>13:10 - 17:52</p>
-                        </div>
-                    </div>
-
-
-                    <div className="esperado">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            <p>8 Horas</p>
-                        </div>
-                    </div>
-
-
-                    <div className="registrado">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            <p>7:45:35</p>
-                        </div>
-                    </div>
-
-
-                    <div className="salario">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            <h2>R$ 3.870,00</h2>
-                        </div>
-                        
-                    </div>
-
-
-                    <div className="matricula">
-                    <div className="usuario-title">Status</div>
-                        <div className="ali">
-                            <h2>12345</h2>
-                        </div>
-                    </div>      
+                <div>
+                    <Client/>
+                    <Client/>
+                    <Client/>
+                    <Client/>
                 </div>
             </div>
         </div>

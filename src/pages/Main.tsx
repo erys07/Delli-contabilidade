@@ -1,7 +1,7 @@
     import Image from '../assets/images/image.svg'
 
     function Main(){
-        return<div className="grid grid-cols-2">
+        return<div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="flex flex-col items-center justify-center h-screen bg-[#110782]" style={{ backgroundImage: "radial-gradient(circle at center, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%)", padding: "20px" }}>
                 <div className="flex items-center justify-center mb-10">
                     <a className="text-5xl text-white">Olá! Seja bem vindo</a>
